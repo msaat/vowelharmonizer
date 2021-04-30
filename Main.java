@@ -12,7 +12,7 @@ class Main {
     String inputtedWord = myObj.nextLine();  
     //System.out.println(inputtedWord);
     Scanner myOtherObj = new Scanner(System.in);
-    System.out.println("pick function: 'plural'");
+    System.out.println("type name of function from the following list:\nplural\n");
    String choice = myOtherObj.nextLine();   
     String v = vowelSearch(inputtedWord);
     if (choice.equals("plural")){
