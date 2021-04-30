@@ -12,13 +12,18 @@ class Main {
     String inputtedWord = myObj.nextLine();  
     //System.out.println(inputtedWord);
     Scanner myOtherObj = new Scanner(System.in);
-    System.out.println("type name of function from the following list:\nplural\n");
+    System.out.println("type name of function from the following list:\nplural, without, ");
    String choice = myOtherObj.nextLine();   
     String v = vowelSearch(inputtedWord);
     if (choice.equals("plural")){
       String y = twoVowel.plural(v);
       String finalPlural = inputtedWord.concat(y);
       System.out.println(finalPlural);
+    }
+    if (choice.equals("without")){
+      String y = fourVowel.without(v);
+      String finalWithout = inputtedWord.concat(y);
+      System.out.println(finalWithout);
     }
 
 

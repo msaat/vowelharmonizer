@@ -1,6 +1,5 @@
 public class twoVowel{
 
-
 public static String changerFinder(String n){
   String changer = "";
   String backVowels = "aouı";
@@ -12,9 +11,6 @@ public static String changerFinder(String n){
   }
   return changer;
 }
-
-
-
 
 public static String plural(String n){
   String changer = changerFinder(n);
