@@ -12,9 +12,10 @@ class Main {
     String inputtedWord = myObj.nextLine();  
     //System.out.println(inputtedWord);
     Scanner myOtherObj = new Scanner(System.in);
-    System.out.println("type name of function from the following list:\nplural, without, ");
+    System.out.println("type name of function from the following list:\nplural, without, from, at, with, to");
    String choice = myOtherObj.nextLine();   
     String v = vowelSearch(inputtedWord);
+    String lastLet = lastLetter(inputtedWord);
     if (choice.equals("plural")){
       String y = twoVowel.plural(v);
       String finalPlural = inputtedWord.concat(y);
@@ -25,6 +26,27 @@ class Main {
       String finalWithout = inputtedWord.concat(y);
       System.out.println(finalWithout);
     }
+    if (choice.equals("from")){
+      String y = twoVowel.from(v);
+      String finalFrom = inputtedWord.concat(y);
+      System.out.println(finalFrom);
+    }
+    if (choice.equals("at")){
+      String y = twoVowel.at(v);
+      String finalAt = inputtedWord.concat(y);
+      System.out.println(finalAt);
+    }
+    if (choice.equals("with")){
+      String y = twoVowel.with(v);
+      String finalWith = inputtedWord.concat(y);
+      System.out.println(finalWith);
+    }
+    if (choice.equals("to")){
+      String y = twoVowel.to(v,lastLet);
+      String finalTo = inputtedWord.concat(y);
+      System.out.println(finalTo);
+    }
+
 
 
   }
@@ -42,10 +64,14 @@ class Main {
        return lettertwo;
      }
        
-      
-     
-     
   }
+
+  public static String lastLetter(String m){
+    String letter = m.substring(m.length()-1,m.length());
+    return letter;
+  }
+       
+  
 
 
 }
