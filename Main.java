@@ -12,7 +12,7 @@ class Main {
     String inputtedWord = myObj.nextLine();  
     //System.out.println(inputtedWord);
     Scanner myOtherObj = new Scanner(System.in);
-    System.out.println("type name of function from the following list:\nplural, without, from, at, with, to");
+    System.out.println("type name of function from the following list:\nplural, without, from, at, with, to, accusative");
    String choice = myOtherObj.nextLine();   
     String v = vowelSearch(inputtedWord);
     String lastLet = lastLetter(inputtedWord);
@@ -45,6 +45,11 @@ class Main {
       String y = twoVowel.to(v,lastLet);
       String finalTo = inputtedWord.concat(y);
       System.out.println(finalTo);
+    }
+    if (choice.equals("accusative")){
+      String y = fourVowel.accusative(v,lastLet);
+      String finalAcc = inputtedWord.concat(y);
+      System.out.println(finalAcc);
     }
 
 

@@ -27,5 +27,17 @@ public static String without(String n){
   return ending;
 }
 
+public static String accusative(String n, String m){
+  String changer = changerFinder(n);
+  String ending = "";
+  if (n.equals(m)){ 
+  ending = "y"+changer;
+  }
+  else {
+  ending = changer;
+  }
+  return ending;
+}
+
 
 }
