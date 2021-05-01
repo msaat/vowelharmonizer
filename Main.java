@@ -56,6 +56,7 @@ class Main {
 
   }
 
+/*
   public static String vowelSearch(String m){
     String[] vowelsone = {"a", "ı", "e", "i", "u", "o", "ü", "ö"};
      ArrayList<String> vowels = new ArrayList<String>(Arrays.asList(vowelsone));
@@ -70,6 +71,25 @@ class Main {
      }
        
   }
+
+  */
+
+  public static String vowelSearch(String m){
+    String vowelString = "aeiouüöı";  
+    String fin = "";
+     for (int i = m.length(); i > 0; i--){
+       String letter = m.substring(i-1,i);
+       if((vowelString.indexOf(letter))>=0){
+         fin = letter;
+         break;
+       }
+       else{
+         fin = "no last vowel found";
+       }
+     }
+     return fin;
+  }
+  
 
   public static String lastLetter(String m){
     String letter = m.substring(m.length()-1,m.length());
