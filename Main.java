@@ -7,10 +7,14 @@ import java.util.*;
 
 class Main {
   public static void main(String[] args) {
+    while (true){
     Scanner myObj = new Scanner(System.in); 
-    System.out.println("input word:");
+    System.out.println("input word or enter 'exit' to quit:");
     String inputtedWord = myObj.nextLine();  
-    //System.out.println(inputtedWord);
+    if (inputtedWord.equals("exit")){
+      break;
+     }
+    else {
     Scanner myOtherObj = new Scanner(System.in);
     System.out.println("type name of function from the following list:\nplural, without, from, at, with, to, accusative");
    String choice = myOtherObj.nextLine();   
@@ -53,7 +57,8 @@ class Main {
     }
 
 
-
+  }
+  }
   }
 
 /*
