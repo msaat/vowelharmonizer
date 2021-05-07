@@ -9,3 +9,7 @@ How it works:
 - type out the name of suffix type you want to add from the given list
 - the noun + corresponding suffix will be outputted
 - if you wish to quit, enter 'exit' when prompted to quit the program
+
+How it looks:
+<img width="403" alt="Screen Shot 2021-05-06 at 11 09 39 PM" src="https://user-images.githubusercontent.com/83249290/117392507-3751e580-aec0-11eb-8120-714d7ab3a563.png">
+
