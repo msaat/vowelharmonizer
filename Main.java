@@ -24,36 +24,43 @@ class Main {
       String y = twoVowel.plural(v);
       String finalPlural = inputtedWord.concat(y);
       System.out.println(finalPlural);
+      System.out.println();
     }
     if (choice.equals("without")){
       String y = fourVowel.without(v);
       String finalWithout = inputtedWord.concat(y);
       System.out.println(finalWithout);
+      System.out.println();
     }
     if (choice.equals("from")){
       String y = twoVowel.from(v);
       String finalFrom = inputtedWord.concat(y);
       System.out.println(finalFrom);
+      System.out.println();
     }
     if (choice.equals("at")){
       String y = twoVowel.at(v);
       String finalAt = inputtedWord.concat(y);
       System.out.println(finalAt);
+      System.out.println();
     }
     if (choice.equals("with")){
       String y = twoVowel.with(v);
       String finalWith = inputtedWord.concat(y);
       System.out.println(finalWith);
+      System.out.println();
     }
     if (choice.equals("to")){
       String y = twoVowel.to(v,lastLet);
       String finalTo = inputtedWord.concat(y);
       System.out.println(finalTo);
+      System.out.println();
     }
     if (choice.equals("accusative")){
       String y = fourVowel.accusative(v,lastLet);
       String finalAcc = inputtedWord.concat(y);
       System.out.println(finalAcc);
+      System.out.println();
     }
 
 
@@ -61,23 +68,6 @@ class Main {
   }
   }
 
-/*
-  public static String vowelSearch(String m){
-    String[] vowelsone = {"a", "ı", "e", "i", "u", "o", "ü", "ö"};
-     ArrayList<String> vowels = new ArrayList<String>(Arrays.asList(vowelsone));
-     int i = m.length();
-     String letter = m.substring(i-1,i);
-     if (vowels.contains(letter)){
-       return letter;
-     }
-     else{
-       String lettertwo = m.substring(i-2,i-1);
-       return lettertwo;
-     }
-       
-  }
-
-  */
 
   public static String vowelSearch(String m){
     String vowelString = "aeiouüöı";  
@@ -95,7 +85,6 @@ class Main {
      return fin;
   }
   
-
   public static String lastLetter(String m){
     String letter = m.substring(m.length()-1,m.length());
     return letter;
